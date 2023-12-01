@@ -177,6 +177,11 @@ public:
         }
     }
 
+    void deletion() {
+        delete[] time_float;
+        delete[] time_string;
+    }
+
 };
 
 int main()
@@ -223,4 +228,7 @@ int main()
         cin >> isActive;
         system("cls");
     }
+
+    first.deletion();
+
 }
